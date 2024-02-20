@@ -1,0 +1,16 @@
+
+class Binary  {
+    public static void main(String[] args) {
+    int x=8421;
+    String d="";
+
+    while(x>0)
+        {
+            d+=x%2;
+            x/=2;
+            
+        }
+
+      System.out.println("Test" + d);
+      }
+}
