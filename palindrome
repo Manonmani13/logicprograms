@@ -1,0 +1,20 @@
+package com.proretention.scrm.communities.services;
+
+import static com.google.common.math.IntMath.pow;
+
+public class Test {
+    public static void main(String[] args) {
+        String orginial = "racecar", reverse = "";
+        for(int i=orginial.length()-1;i>=0;i--){
+                reverse=reverse+orginial.charAt(i);
+        }
+        if(orginial.equals(reverse))
+            System.out.println("Palindrome");
+        else
+            System.out.println("not Palindrome");
+
+    }
+
+
+}
+
