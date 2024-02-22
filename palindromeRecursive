@@ -1,0 +1,27 @@
+package com.proretention.scrm.communities.services;
+
+import static com.google.common.math.IntMath.pow;
+
+public class Test {
+    public static void main(String[] args) {
+        int reverse = 0;
+        int n=121,d=0,original=n;
+
+        if(isPalindrome(n,reverse)==original)
+            System.out.println("Palindrome");
+        else
+            System.out.println("not Palindrome");
+
+    }
+    static int isPalindrome(int num, int rev)
+    {
+        if(num == 0)
+            return rev;
+        int rem = num % 10;
+        rev = rev * 10 + rem;
+        return isPalindrome(num / 10, rev);
+    }
+
+
+}
+
