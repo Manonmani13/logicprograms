@@ -1,0 +1,16 @@
+
+
+public class Test {
+    public static void main(String[] args) {
+        int n=98232,d;
+        String reverse = null;
+        for(;n!=0;n/=10){
+            reverse=reverse+n%10;
+        }
+
+           
+        System.out.println(reverse);
+
+    }
+}
+
