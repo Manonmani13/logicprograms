@@ -1,0 +1,19 @@
+
+
+public class Test {
+    public static void main(String[] args) {
+        int n=98232,d;
+        String reverse = null;
+
+
+            while(n > 0)
+            {
+                d = n % 10;
+                reverse = reverse +d;
+                n = n / 10;
+            }
+        System.out.println(reverse);
+
+    }
+}
+
