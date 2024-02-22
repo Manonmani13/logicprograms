@@ -1,0 +1,30 @@
+
+public class Test {
+    public static void main(String[] args) {
+        int n=459524,d=n,count=0;
+        String reverse = null;
+    while(n>0){
+        count++;
+        n=n/10;
+    }
+    int s=reverseValue(d,count);
+
+
+        System.out.println(s);
+
+    }
+    static int reverseValue(int value, int length)
+    {
+        if(length==1)
+            return value;
+        else{
+            int b=value%10;
+            value=value/10;
+            System.out.println(b*pow(10,length-1));
+
+            return (b*pow(10,length-1))+reverseValue(value,--length);
+        }
+    }
+
+}
+
