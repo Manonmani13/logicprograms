@@ -1,0 +1,10 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      System.out.println("Hello, World!");
+      String a="a|b|c|d";
+      a=a.replace("|",",");
+      System.out.println(a);
+  }
+}
